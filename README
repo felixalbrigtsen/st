@@ -1,6 +1,23 @@
 st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
+Original source: https://st.suckless.org/
+
+My modifications / patches
+--------------------------
+- scrollback (buffer available with mouse / keyboard)
+- alpha (transparency, requires compositor)
+- clipboard (copy / paste with keyboard)
+- desktop entry (st can be launched from rofi / app launcher)
+- font2 (allows for multiple fonts)
+- ligatures (requires patched font)
+
+My build
+--------
+- Apply my config (keybinds, colors, etc)
+  - `git apply felixalbConf.diff`
+- "Install" from below:
+  - `sudo make clean install`
 
 
 Requirements
